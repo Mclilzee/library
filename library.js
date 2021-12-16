@@ -7,7 +7,6 @@ function Book(title, author, pages) {
 }
 
 function addBookToLibrary(title, author, pages) {
-
   myLibrary.push(new Book(title, author, pages));
 }
 
@@ -18,14 +17,19 @@ for (let i = 1; i <= 10; i++) {
 myLibrary.forEach((book) => {
   let bookElement = document.createElement("div");
   bookElement.classList.add("book");
-  
+  // bookElement.classList.add("read");
+
   for (let info in book) {
     let info_box = document.createElement("div");
     info_box.classList.add("info-box");
+
     let info_name = document.createElement("div");
     info_name.textContent = capitalize(info);
-    let info_content = document.createElement("div");
-    info_content.textContent = book[info] + " yesssssssssssssssssssssssssss";
+    info_name.classList.add("info-title");
+
+    let info_content = document.createElement("p");
+    info_content.textContent = book[info];
+    info_content.classList.add("info");
 
     info_box.appendChild(info_name);
     info_box.appendChild(info_content);
@@ -43,5 +47,3 @@ function capitalize(string) {
 
   return new_string + ":";
 }
-
-

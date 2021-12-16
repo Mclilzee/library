@@ -1,6 +1,6 @@
 html {
   background-image: url(./images/lib.jpg);
-  background-size: contain;
+  background-size: auto;
 }
 
 body {
@@ -11,7 +11,8 @@ body {
 #title {
   font-weight: bolder;
   font-size: 50px;
-  color: #4c4e4c;
+  color: #573a0e;
+  text-shadow: 3px 3px #778891;
   text-decoration-line: underline;
   text-decoration-color: #643030;
   text-overflow: clip;
@@ -24,22 +25,47 @@ body {
 }
 
 .book {
+  background-image: url(./images/cover.jpg);
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
-  background-color: honeydew;
-  text-align: center;
-  border: solid grey;
-  height: 220px;
-  width: 180px;
-  text-overflow: ellipsis;
+  border: thin solid grey;
+  height: 250px;
+  width: 200px;
+  flex-shrink: 1;
+  overflow: auto;
 }
 
 .info-box {
+  gap: 10px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 200px;
+  height: 20px;
   flex: auto;
+}
+
+.info-title {
+  font-size: 17px;
+  font-weight: bold;
+  color: #5bb325;
+  flex: auto;
+}
+
+.info {
+  text-align: center;
+  flex: auto;
+}
+
+.read {
+  border: thick solid rgb(44, 224, 44);
+}
+
+p {
+  word-break: break-all;
+  padding-top: 3px;
+  margin: 0;
+  overflow-wrap: normal;
+  overflow: hidden;
 }
