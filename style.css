@@ -1,0 +1,45 @@
+html {
+  background-image: url(./images/lib.jpg);
+  background-size: contain;
+}
+
+body {
+  padding: 50px;
+  text-align: center;
+}
+
+#title {
+  font-weight: bolder;
+  font-size: 50px;
+  color: #4c4e4c;
+  text-decoration-line: underline;
+  text-decoration-color: #643030;
+  text-overflow: clip;
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.book {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: honeydew;
+  text-align: center;
+  border: solid grey;
+  height: 220px;
+  width: 180px;
+  text-overflow: ellipsis;
+}
+
+.info-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: auto;
+}
